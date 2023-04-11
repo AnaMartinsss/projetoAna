@@ -22,29 +22,57 @@
 
 .header a {
   color: rgb(250, 105, 48);
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
   margin: 0 11px;
 }
 
-.content img {
-  width: 300px;
-  border-radius: 50%;
-}
 
-.content {
+
+
+.burguer {
   display: grid;
-  grid-template-columns: 400px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  height: 500px;
+  justify-items: center;
   align-items: center;
 }
 
-.content > p {
-  display: grid;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
+.burguer > div > img {
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px #ffffff7f;
+  
+}
+
+.burguer p {
+  color: #fff;
   text-align: center;
 }
-.content h1 {
-  color: rgb(250, 105, 48);
-  font-size: 30px;
+
+.burguer>p:nth-child(1){
+  width: 200px;
+}
+.burguer>p:nth-child(2){
+  width: 100px;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 35px 350px;
+  gap: 100px;
+}
+
+.sobre > p {
+  color: #fff;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  color: tomato;
+  font-size: 22px;
 }
