@@ -1,11 +1,16 @@
 .conteiner {
   background-color: #000;
+  height: 1000px;
+}
+.conteiner img {
+  width: 150px;
+  height: 150px;
 }
 
 .borda {
-  width: 802px;
-  height: 800px;
-  border: solid 1px white;
+  width: 820px;
+  height: 820px;
+  border: solid 1px #000;
   align-items: center;
   background-color: #e68d44;
   margin-left: 35%;
@@ -14,7 +19,7 @@
 .card {
   width: 200px;
   height: 200px;
-  border: solid 1px white;
+  border: solid 1px;
   float: left;
-  border-radius: 100px;
+  border-radius: 180px;
 }
