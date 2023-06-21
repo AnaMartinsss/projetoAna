@@ -5,10 +5,10 @@ import { MemoriaComponent } from "./memoria/memoria.component";
 import { InicioComponent } from "./inicio/inicio.component";
 
 const routes: Routes = [
-  { path: "/", component: InicioComponent },
+  { path: "inicio", component: InicioComponent },
   { path: "jogo", component: MemoriaComponent },
   { path: "cardapio", component: CardapioComponent },
-  { path: "", redirectTo: "/", pathMatch: "full" },
+  { path: "", redirectTo: "inicio", pathMatch: "full" },
 ];
 
 @NgModule({
