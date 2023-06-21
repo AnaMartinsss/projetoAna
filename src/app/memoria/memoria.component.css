@@ -1,12 +1,20 @@
 .conteiner {
-  width: 408px;
-  height: 408px;
-  border: solid 1px #000;
+  background-color: #000;
+}
+
+.borda {
+  width: 802px;
+  height: 800px;
+  border: solid 1px white;
+  align-items: center;
+  background-color: #e68d44;
+  margin-left: 35%;
 }
 
 .card {
-  width: 100px;
-  height: 100px;
-  border: solid 1px #000;
+  width: 200px;
+  height: 200px;
+  border: solid 1px white;
   float: left;
+  border-radius: 100px;
 }
