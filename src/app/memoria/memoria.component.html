@@ -1,0 +1,9 @@
+<div class="conteiner">
+  <div
+    class="card"
+    *ngFor="let item of lista"
+    [style.background]="'url(' + item.imagem_verso + ')'"
+    [style.background-size]="'cover'"
+    (click)="trocar_card($event, item.imagem_frente, item.identificador)"
+  ></div>
+</div>

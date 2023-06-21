@@ -1,0 +1,12 @@
+.conteiner {
+  width: 408px;
+  height: 408px;
+  border: solid 1px #000;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  border: solid 1px #000;
+  float: left;
+}
