@@ -1,4 +1,4 @@
-<div class="conteiner">
+<div class="container">
   <img src="assets/logo.jpg" />
   <div class="borda">
     <div
@@ -7,6 +7,8 @@
       [style.background]="'url(' + item.imagem_verso + ')'"
       [style.background-size]="'cover'"
       (click)="trocar_card($event, item.imagem_frente, item.identificador)"
-    ></div>
+    >
+      <div class="fundo"></div>
+    </div>
   </div>
 </div>

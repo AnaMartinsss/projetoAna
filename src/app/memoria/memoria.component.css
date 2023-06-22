@@ -1,25 +1,35 @@
-.conteiner {
+.container {
   background-color: #000;
-  height: 1000px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  justify-items: center;
 }
-.conteiner img {
+.container img {
   width: 150px;
   height: 150px;
 }
 
 .borda {
-  width: 820px;
-  height: 820px;
+  margin-top: calc(100vh - 45%);
+  width: 500px;
+  height: 500px;
   border: solid 1px #000;
+  background-color: #ffd95e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  background-color: #e68d44;
-  margin-left: 35%;
+  gap: 20px;
+  box-shadow: 0 0 20px 2px #e6ba52;
 }
 
 .card {
-  width: 200px;
-  height: 200px;
-  border: solid 1px;
-  float: left;
+  width: 100px;
+  height: 100px;
+  border: solid 2px rgb(255, 196, 0);
   border-radius: 180px;
+
 }
+

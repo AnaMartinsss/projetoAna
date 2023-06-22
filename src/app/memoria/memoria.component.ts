@@ -14,12 +14,12 @@ export class MemoriaComponent {
   constructor() {
     for (let i = 0; i < 8; i++) {
       this.lista.push({
-        imagem_verso: "assets/logo.jpg",
+        imagem_verso: "assets/capa.jpeg",
         imagem_frente: "assets/" + i + ".PNG",
         identificador: "" + i,
       });
       this.lista.push({
-        imagem_verso: "assets/logo.jpg",
+        imagem_verso: "assets/capa.jpeg",
         imagem_frente: "assets/" + i + ".PNG",
         identificador: "" + i,
       });
@@ -27,7 +27,7 @@ export class MemoriaComponent {
   }
 
   public trocar_card(evt: any, imagem: any, identificador: any) {
-    var elemento = evt.srcElement;
+    let elemento = evt.srcElement;
     elemento.style.background = "url(" + imagem + ")";
     elemento.style.backgroundSize = "cover";
     if (this.click_anterior == "") {
@@ -39,9 +39,9 @@ export class MemoriaComponent {
       } else {
         this.click_anterior = "";
         setTimeout(() => {
-          elemento.style.background = "url( assets/logo.jpg )";
+          elemento.style.background = "url( assets/capa.jpeg )";
           elemento.style.backgroundSize = "cover";
-          this.elemento_ant.style.background = "url( assets/logo.jpg )";
+          this.elemento_ant.style.background = "url( assets/capa.jpeg )";
           this.elemento_ant.style.backgroundSize = "cover";
         }, 500);
       }
