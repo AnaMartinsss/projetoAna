@@ -11,17 +11,34 @@ export class MemoriaComponent {
   click_anterior = "";
   elemento_ant = document.createElement("div");
 
+  gerarNum() {
+    const maxNumbers = 8;
+    let randomNumber;
+    let tmp;
+    let list = [];
+    for (let i = 0; i < maxNumbers; i++) {
+      list[i] = i;
+    }
+    for (let i = list.length; i; ) {
+      randomNumber = (Math.random() * i--) | 0;
+      tmp = list[randomNumber];
+      // troca o número aleatório pelo atual
+      list[randomNumber] = list[i];
+      // troca o atual pelo aleatório
+      list[i] = tmp;
+    }
+
+    return list;
+  }
+
   constructor() {
-    for (let i = 0; i < 8; i++) {
+    let pos = this.gerarNum();
+
+    for (let i = 0; i < 16; i++) {
       this.lista.push({
         imagem_verso: "assets/capa.jpeg",
-        imagem_frente: "assets/" + i + ".PNG",
-        identificador: "" + i,
-      });
-      this.lista.push({
-        imagem_verso: "assets/capa.jpeg",
-        imagem_frente: "assets/" + i + ".PNG",
-        identificador: "" + i,
+        imagem_frente: "assets/" + pos[i < 8 ? i : i - 8] + ".PNG",
+        identificador: "" + pos[i < 8 ? i : i - 8],
       });
     }
   }

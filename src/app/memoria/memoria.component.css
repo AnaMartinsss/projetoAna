@@ -12,22 +12,22 @@
 }
 
 .borda {
-  margin-top: calc(100vh - 45%);
-  width: 500px;
-  height: 500px;
+  margin-top: 50px;
+  width: 750px;
+  height: 750px;
   border: solid 1px #000;
   background-color: #e68d44;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
   gap: 20px;
   box-shadow: 0 0 20px 2px #e68d44;
 }
 
 .card {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border: solid 2px #e68d44;
   border-radius: 180px;
 }
