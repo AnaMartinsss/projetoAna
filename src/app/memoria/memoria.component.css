@@ -16,20 +16,18 @@
   width: 500px;
   height: 500px;
   border: solid 1px #000;
-  background-color: #ffd95e;
+  background-color: #e68d44;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 0 20px 2px #e6ba52;
+  box-shadow: 0 0 20px 2px #e68d44;
 }
 
 .card {
   width: 100px;
   height: 100px;
-  border: solid 2px rgb(255, 196, 0);
+  border: solid 2px #e68d44;
   border-radius: 180px;
-
 }
-
