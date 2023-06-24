@@ -1,0 +1,30 @@
+.container {
+  background-color: #000;
+  height: 100%;
+  gap: 10px;
+  justify-items: center;
+}
+
+.borda {
+  width: 750px;
+  height: 750px;
+  border: solid 1px #000;
+  background-color: #e68d44;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: justify;
+  margin-left: 35%;
+  box-shadow: 0 0 20px 2px #e68d44;
+}
+p {
+  font-size: 20px;
+}
+.borda h1 {
+  text-align: center;
+  color: #e14d37;
+  font-size: 40px;
+  text-shadow: -1px -1px 0px #a43f3f, -1px 1px 0px #a43f3f, 1px -1px 0px #a43f3f,
+    1px 0px 0px #a43f3f;
+}
