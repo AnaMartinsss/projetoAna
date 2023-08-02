@@ -7,13 +7,15 @@ import { MemoriaComponent } from './memoria/memoria.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './inicio/inicio.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MemoriaComponent,
     CardapioComponent,
-    InicioComponent
+    InicioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
