@@ -21,7 +21,7 @@
 }
 
 .header a {
-  color: rgb(250, 105, 48);
+  color: #0a4b96;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -67,7 +67,7 @@
 
 h1 {
   text-align: center;
-  color: tomato;
+  color: #0a4b96;
   font-size: 22px;
 }
 .sobre img {
