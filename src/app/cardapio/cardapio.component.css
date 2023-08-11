@@ -4,8 +4,51 @@
   height: 100vh;
 }
 .header > img {
-  height: 450px;
-  width: 400px;
+  height: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+p {
+  color: #6868f7;
+}
+.hamburgueres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.hamburguer1 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer2 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer3 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer4 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer5 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer6 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
 }
