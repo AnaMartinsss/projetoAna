@@ -19,7 +19,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  border: 1px solid red;
   width: 750px;
   margin: 0 auto;
 }
@@ -117,31 +116,37 @@ h1 {
   text-align: center;
 }
 
-p {
-  color: white;
-  font-size: 12px;
-}
 .porções {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  border: 1px solid red;
-  width: 600px;
+  width: 750px;
+  margin: 0 auto;
 }
-.porção1 {
+
+.porção {
   border-radius: 10px;
-  background-color: #001f60;
-  height: 280px;
-  width: 180px;
+  background: linear-gradient(#001f60, #0d3ea8);
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
-.porção1 img {
+.porção img {
   width: 100px;
   border-radius: 60px;
   box-shadow: 0 0 20px 5px #ffffff7f;
-  right: 30%;
   background-size: cover;
+  margin: 10px;
 }
-.porção2 {
+.porção p {
+  padding: 0 10px;
+  font-size: 14px;
+}
+/* .porção2 {
   border-radius: 10px;
   background-color: #001f60;
   height: 280px;
@@ -166,28 +171,38 @@ p {
   box-shadow: 0 0 20px 5px #ffffff7f;
   right: 30%;
   background-size: cover;
-}
+} */
 .bebidas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  border: 1px solid red;
-  width: 600px;
+  width: 750px;
+  margin: 0 auto;
 }
 
-.bebida1 {
+.bebida {
   border-radius: 10px;
-  background-color: #001f60;
-  height: 280px;
-  width: 180px;
+  background: linear-gradient(#001f60, #0d3ea8);
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
-.bebida1 img {
+.bebida img {
   width: 100px;
   border-radius: 60px;
   box-shadow: 0 0 20px 5px #ffffff7f;
-  right: 30%;
   background-size: cover;
+  margin: 10px;
 }
+.bebida p {
+  padding: 0 10px;
+  font-size: 14px;
+}
+/* 
 .bebida2 {
   border-radius: 10px;
   background-color: #001f60;
@@ -213,4 +228,4 @@ p {
   box-shadow: 0 0 20px 5px #ffffff7f;
   right: 30%;
   background-size: cover;
-}
+} */
