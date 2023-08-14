@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   background-color: #0a4b96;
   width: 100%;
@@ -14,22 +19,33 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  border: 1px solid red;
+  width: 750px;
+  margin: 0 auto;
 }
-.hamburguer1 {
+.hamburguer {
   border-radius: 10px;
-  background-color: #001f60;
-  height: 280px;
-  width: 180px;
-  text-align: center;
-  text-align: justify;
+  background: linear-gradient(#001f60, #0d3ea8);
+  height: 300px;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
-.hamburguer1 img {
+.hamburguer img {
   width: 100px;
   border-radius: 60px;
   box-shadow: 0 0 20px 5px #ffffff7f;
   background-size: cover;
+  margin: 10px;
 }
-.hamburguer2 {
+.hamburguer p {
+  padding: 0 10px;
+  font-size: 14px;
+}
+/* .hamburguer2 {
   border-radius: 10px;
   background-color: #001f60;
   height: 280px;
@@ -93,7 +109,7 @@ h2 {
   box-shadow: 0 0 20px 5px #ffffff7f;
   right: 30%;
   background-size: cover;
-}
+} */
 
 h1 {
   color: #00ffd9;
@@ -109,6 +125,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  border: 1px solid red;
+  width: 600px;
 }
 .porção1 {
   border-radius: 10px;
@@ -153,6 +171,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  border: 1px solid red;
+  width: 600px;
 }
 
 .bebida1 {
