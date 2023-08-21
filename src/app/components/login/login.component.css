@@ -4,10 +4,70 @@
   background-color: #001f60;
 }
 .cadastro {
-  width: 450px;
+  width: 550px;
   height: 800px;
   background-color: #7263a4;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   border-radius: 50px;
+}
+.cadastro img {
+  margin-right: 40px;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #7263a4;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #fcd432;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #fcd432;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #fcd432;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
 }
