@@ -1,25 +1,18 @@
 <div class="container">
   <div class="cadastro">
-    <img src="assets/cadastro.png" alt="Cadastre-se" />
-    <div class="login-page">
+    <form action="processar_login.php" method="POST">
+      <img src="assets/cadastro.png" alt="Faça seu cadastro!" />
       <div class="form">
-        <form class="register-form">
-          <input type="text" placeholder="name" />
-          <input type="password" placeholder="password" />
-          <input type="text" placeholder="email address" />
-          <button>create</button>
-          <p class="message">Already registered? <a href="#">Sign In</a></p>
-        </form>
-        <form class="login-form">
-          <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" />
-          <button>login</button>
-          <p class="message">
-            Não é cadastrado? <a href="#">Criar uma conta</a>
-          </p>
-          <p class="message"><a href=""></a>Esqueceu senha?</p>
-        </form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
       </div>
-    </div>
+      <div class="form">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <button type="submit">Login</button>
+      <img src="assets/google.png" alt="Login com Google" />
+      <img src="assets/face.png" alt="Login com Facebook" />
+    </form>
   </div>
 </div>
