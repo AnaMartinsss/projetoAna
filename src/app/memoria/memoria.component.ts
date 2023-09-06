@@ -36,9 +36,10 @@ export class MemoriaComponent {
 
     for (let i = 0; i < 16; i++) {
       this.lista.push({
-        imagem_verso: "assets/capa.jpeg",
+        imagem_verso: "assets/capa.png",
         imagem_frente: "assets/" + pos[i < 8 ? i : i - 8] + ".PNG",
         identificador: "" + pos[i < 8 ? i : i - 8],
+        
       });
     }
   }
@@ -56,9 +57,9 @@ export class MemoriaComponent {
       } else {
         this.click_anterior = "";
         setTimeout(() => {
-          elemento.style.background = "url( assets/capa.jpeg )";
+          elemento.style.background = "url( assets/capa.png )";
           elemento.style.backgroundSize = "cover";
-          this.elemento_ant.style.background = "url( assets/capa.jpeg )";
+          this.elemento_ant.style.background = "url( assets/capa.png )";
           this.elemento_ant.style.backgroundSize = "cover";
         }, 500);
       }
