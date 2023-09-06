@@ -1,14 +1,15 @@
 <div class="container">
+
   <div class="cadastro">
-    <form action="processar_login.php" method="POST">
+    <form>
       <img src="assets/cadastro.png" alt="Faça seu cadastro!" />
       <div class="form">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
+        <input type="text" id="username" name="username" formControlName="username" required />
       </div>
       <div class="form">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
+        <input type="password" id="password" name="password" formControlName="password" required />
       </div>
       <button type="button" (click)="login()">Login</button>
       <img src="assets/google.png" alt="Login com Google" />

@@ -8,6 +8,7 @@ import { CardapioComponent } from './cardapio/cardapio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { LoginComponent } from './components/login/login.component';
     MemoriaComponent,
     CardapioComponent,
     InicioComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

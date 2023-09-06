@@ -4,6 +4,8 @@ import { CardapioComponent } from "./cardapio/cardapio.component";
 import { MemoriaComponent } from "./memoria/memoria.component";
 import { InicioComponent } from "./inicio/inicio.component";
 import { LoginComponent } from "./components/login/login.component";
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
 const routes: Routes = [
   { path: "inicio", component: InicioComponent },
@@ -14,7 +16,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
