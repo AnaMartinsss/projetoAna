@@ -3,56 +3,92 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-.container {
-    height: 100vh;
-    background-color: #001f60;
-    display: grid;
-    place-items: center;
-  }
-.cadastro {
-    width: 700px;
-    height: 500px;
-    place-items: center;
-    background-color: #7263a4;
-    padding: 20px;   
-    border-radius: 18px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-img {
-    text-align: center;
-    background-size: cover;
-    align-items: center;
-  }
-
-.form {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    color: rgb(166, 167, 179);
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgb(166, 167, 179);
-    border-radius: 3px;
-}
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #fcd432;
-    color: rgb(48, 48, 48);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
+
+border-radius: 20px;
+border: 1px solid #FF4B2B; 
+background-color: #FF4B2B; 
+color: #FFFFFF; 
+font-size: 12px; 
+font-weight: bold; 
+padding: 12px 45px; 
+letter-spacing: 1px; 
+text-transform: uppercase; 
+transition: 80ms ease-in; 
 }
 
-button:hover {
-    background-color: #fcd432;
+button:active {
+
+transform: scale(0.95);
+}
+
+button:focus {
+
+outline: none;
+
+}
+
+button.ghost {
+
+background-color: transparent;
+border-color: #FFFFFF;
+}
+
+input {
+
+background-color: #eee;
+border: none;
+padding: 12px 15px;
+margin: 8px 0; 
+width: 100%;
+}
+
+.container {
+
+background-color: #FFFFFF
+;
+border-radius: 10px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+position: relative;
+overflow: hidden; 
+width: 768px;
+max-width: 100%;
+min-height: 480px;
+}
+
+.form-container { 
+position: absolute;
+top: 0; 
+height: 100%;
+transition: all 0.6s ease-in-out;
+
+} 
+
+.sign-in-container { 
+left: 0;
+width: 50%; 
+z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+
+transform: translateX(100%);
+
+}
+
+
+.sign-up-container {
+
+left: 0;
+width: 50%; opacity: 0;
+z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+
+transform: translateX(100%);
+opacity: 1; z-index: 5;
+animation: show 0.65;
+ 
 }
