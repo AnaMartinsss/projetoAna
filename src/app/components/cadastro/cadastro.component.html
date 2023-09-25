@@ -1,26 +1,87 @@
-<div class="container" id="container">
-  <div class="form-container sign-up-container">
-    <form actions="#">
-        <h1>Faça seu Cadastro:</h1>
-            <div class="social-container">
-
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fa fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-
-            </div>
-
-    <span>Use seu e-mail para Cadastro</span> 
-
-        <input type="text" placeholder="Name"/>
-        <input type="email" placeholder="E-mail" /> 
-        <input type="password" placeholder="Password" />
-
-            <button>Sign Up</button>
-
-        </form>
-
+<section>
+  <div #container class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#" [formGroup]="cadastro">
+        <h1>Sign Up</h1>
+        <div class="social-container">
+          <a href="#" target="_blank" class="social"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#" target="_blank" class="social"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="#" target="_blank" class="social"
+            ><i class="fab fa-google"></i
+          ></a>
+        </div>
+        <span>Or use your Email for registration</span>
+        <label>
+          <input type="text" placeholder="Name" formControlName="nome" />
+        </label>
+        <label>
+          <input type="email" placeholder="Email" formControlName="email" />
+        </label>
+        <label>
+          <input
+            type="password"
+            placeholder="Password"
+            formControlName="pass"
+          />
+        </label>
+        <button style="margin-top: 9px" (click)="createAccount()">
+          Cadastrar
+        </button>
+      </form>
     </div>
-</div>
-
-
+    <div class="form-container sign-in-container">
+      <form action="#" [formGroup]="login">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" target="_blank" class="social"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#" target="_blank" class="social"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="#" target="_blank" class="social"
+            ><i class="fab fa-google"></i
+          ></a>
+        </div>
+        <span> Or sign in using E-Mail Address</span>
+        <label>
+          <input
+            type="email"
+            placeholder="Email"
+            formControlName="email_login"
+          />
+        </label>
+        <label>
+          <input
+            type="password"
+            placeholder="Password"
+            formControlName="pass_login"
+          />
+        </label>
+        <a href="#">Forgot your password?</a>
+        <button (click)="loginAccount()">Sign In</button>
+      </form>
+    </div>
+    <!-- OVERLAY  -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Log in</h1>
+          <p>Sign in here if you already have an account</p>
+          <button class="ghost mt-5" id="signIn" (click)="click()">
+            Sign In
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Create, Account!</h1>
+          <p>Sign up if you still don't have an account ...</p>
+          <button class="ghost" id="signUp" (click)="click()">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

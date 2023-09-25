@@ -1,12 +1,9 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { CardapioComponent } from "./cardapio/cardapio.component";
-import { MemoriaComponent } from "./memoria/memoria.component";
-import { InicioComponent } from "./inicio/inicio.component";
+import { CardapioComponent } from "./components/cardapio/cardapio.component";
+import { MemoriaComponent } from "./components/memoria/memoria.component";
+import { InicioComponent } from "./components/inicio/inicio.component";
 import { LoginComponent } from "./components/login/login.component";
-import { Component } from '@angular/core'
-import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
 import { CadastroComponent } from "./components/cadastro/cadastro.component";
 
 const routes: Routes = [
@@ -19,8 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
