@@ -11,6 +11,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { CadastroComponent } from "./components/cadastro/cadastro.component";
 import { PagamentoComponent } from './pagamento/pagamento.component';
+import { PagAppComponent } from './pag-app/pag-app.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PagamentoComponent } from './pagamento/pagamento.component';
     LoginComponent,
     CadastroComponent,
     PagamentoComponent,
+    PagAppComponent,
   ],
   imports: [
     BrowserModule,
