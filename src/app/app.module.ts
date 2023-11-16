@@ -10,6 +10,7 @@ import { InicioComponent } from "./components/inicio/inicio.component";
 import { LoginComponent } from "./components/login/login.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { CadastroComponent } from "./components/cadastro/cadastro.component";
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CadastroComponent } from "./components/cadastro/cadastro.component";
     InicioComponent,
     LoginComponent,
     CadastroComponent,
+    PagamentoComponent,
   ],
   imports: [
     BrowserModule,
