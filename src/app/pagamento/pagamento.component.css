@@ -1,0 +1,69 @@
+html, body {
+    width: 100%;
+    background-color: rgb(255, 67, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 1024px;
+    height: 512px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(to right, #ff3932 0%,#ff5930 50%,#ff5930 51%,#ffa560 100%);
+    border-radius: 15px;
+    border: solid 0.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.container img{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding: 10%;
+    margin-left: 0 auto;
+    margin-bottom: 10px;
+}
+
+.container button {
+    width: 25%;
+    height: 10%;
+    background-color: yellow;
+    border: solid 1px;
+    font-weight: bold;
+}
+.container p {
+    margin-right: 5%;
+    margin-left: 9%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.textos {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.textos p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
