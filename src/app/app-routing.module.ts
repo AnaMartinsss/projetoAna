@@ -5,8 +5,7 @@ import { MemoriaComponent } from "./components/memoria/memoria.component";
 import { InicioComponent } from "./components/inicio/inicio.component";
 import { LoginComponent } from "./components/login/login.component";
 import { CadastroComponent } from "./components/cadastro/cadastro.component";
-import { PagamentoComponent } from "./pagamento/pagamento.component";
-
+import { PagamentoComponent } from "./components/pagamento/pagamento.component";
 
 const routes: Routes = [
   { path: "inicio", component: InicioComponent },
