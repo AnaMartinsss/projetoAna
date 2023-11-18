@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 .container {
-  background-color: #ed2711ee;
+  background-color: #000;
   width: 100%;
-  height: 100vh;
+  
 }
 .header > img {
   height: 70px;
@@ -14,14 +14,18 @@
 .opcoes{
   height: 40px;
   width: 100%;
-  background-color: black;
+  background-color:  rgb(255, 67, 67);
   color: #fff;
   display: grid;
   grid-template-columns:  1fr 1fr 1fr;
+  font-size: 20px;
+  text-align: center;
+  margin-top:10px ;
 }
 
 h2 {
   color: #fff;
+  
 }
 .hamburgueres {
   display: grid;

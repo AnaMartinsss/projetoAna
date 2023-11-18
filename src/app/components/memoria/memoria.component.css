@@ -15,18 +15,18 @@
   width: 750px;
   height: 750px;
   border: solid 1px #000;
-  background-color: #001f60;
+  background-color: rgb(255, 67, 67) ;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 0 20px 2px #2261e8;
+  box-shadow: 0 0 20px 2px rgb(232, 122, 122);
 }
 
 .card {
   width: 130px;
   height: 130px;
-  border: solid 2px #001f60;
+  border: solid 2px  rgb(255, 67, 67);
   border-radius: 180px;
 }
