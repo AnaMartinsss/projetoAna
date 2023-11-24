@@ -6,6 +6,8 @@ import { InicioComponent } from "./components/inicio/inicio.component";
 import { LoginComponent } from "./components/login/login.component";
 import { CadastroComponent } from "./components/cadastro/cadastro.component";
 import { PagamentoComponent } from "./components/pagamento/pagamento.component";
+import { AplicativoComponent } from "./components/aplicativo/aplicativo.component";
+import { ProdutoComponent } from "./components/produto/produto.component";
 
 const routes: Routes = [
   { path: "inicio", component: InicioComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: "jogo", component: MemoriaComponent },
   { path: "cadastro", component: CadastroComponent },
   { path: "pagamento", component: PagamentoComponent },
+  { path: "aplicativo", component: AplicativoComponent },
+  { path: "produto", component: ProdutoComponent },
   { path: "", redirectTo: "inicio", pathMatch: "full" },
 ];
 
