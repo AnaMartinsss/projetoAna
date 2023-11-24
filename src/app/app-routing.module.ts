@@ -8,6 +8,7 @@ import { CadastroComponent } from "./components/cadastro/cadastro.component";
 import { PagamentoComponent } from "./components/pagamento/pagamento.component";
 import { AplicativoComponent } from "./components/aplicativo/aplicativo.component";
 import { ProdutoComponent } from "./components/produto/produto.component";
+import { EntregaComponent } from "./components/entrega/entrega.component";
 
 const routes: Routes = [
   { path: "inicio", component: InicioComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: "pagamento", component: PagamentoComponent },
   { path: "aplicativo", component: AplicativoComponent },
   { path: "produto", component: ProdutoComponent },
+  { path: "entrega", component: EntregaComponent },
   { path: "", redirectTo: "inicio", pathMatch: "full" },
 ];
 
