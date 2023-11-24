@@ -1,0 +1,29 @@
+.container{
+    background-color: rgb(255, 67, 67);
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    justify-content: center;
+    
+}
+
+.square{
+    border: black 5px;
+    background: linear-gradient(#FF3131, #FF914D);
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+}
+h2{
+    color: yellow;
+}
+
+button{
+    width: 200px;
+    height: 35px;
+    background-color: yellow;
+    border: white;
+    font-size: 15px;
+}

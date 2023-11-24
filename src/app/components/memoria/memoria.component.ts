@@ -59,7 +59,7 @@ export class MemoriaComponent {
         setTimeout(() => {
           elemento.style.background = "url( assets/capa.jpeg )";
           elemento.style.backgroundSize = "cover";
-          this.elemento_ant.style.background = "url( assets/capa.jpegsss )";
+          this.elemento_ant.style.background = "url( assets/capa.jpeg )";
           this.elemento_ant.style.backgroundSize = "cover";
         }, 500);
       }
