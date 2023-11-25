@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #000;
+  width: 100%;
+}
+.header > img {
+  height: 70px;
+}
+.opcoes {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 67, 67);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 20px;
+  text-align: center;
+
+  align-items: center;
+}
+
+h2 {
+  color: #fff;
+}
+.hamburgueres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 750px;
+  margin: 0 auto;
+}
+.card {
+  border-radius: 10px;
+  background: linear-gradient(#ff3131, #ff914d);
+  height: 380px;
+  width: 300px;
+  box-shadow: 0 0 5px #fff;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #fff;
+  cursor: pointer;
+  
+}
+
+.card img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px #ffffff7f;
+  background-size: cover;
+  margin-top: 20px;
+}
+.card p {
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.card h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card span {
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  font-size: 26px;
+}
+
+/* .hamburguer2 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer2 img {
+  width: 100px;
+  border-radius: 60px;
+  box-shadow: 0 0 20px 5px #ffffff7f;
+  right: 30%;
+  background-size: cover;
+}
+.hamburguer3 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer3 img {
+  width: 100px;
+  border-radius: 60px;
+  box-shadow: 0 0 20px 5px #ffffff7f;
+  right: 30%;
+  background-size: cover;
+}
+.hamburguer4 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer4 img {
+  width: 100px;
+  border-radius: 60px;
+  box-shadow: 0 0 20px 5px #ffffff7f;
+  right: 30%;
+  background-size: cover;
+}
+.hamburguer5 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer5 img {
+  width: 100px;
+  border-radius: 60px;
+  box-shadow: 0 0 20px 5px #ffffff7f;
+  right: 30%;
+  background-size: cover;
+}
+.hamburguer6 {
+  border-radius: 10px;
+  background-color: #001f60;
+  height: 280px;
+  width: 180px;
+}
+.hamburguer6 img {
+  width: 100px;
+  border-radius: 60px;
+  box-shadow: 0 0 20px 5px #ffffff7f;
+  right: 30%;
+  background-size: cover;
+} */
+
+.porções {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.bebidas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 750px;
+  margin: 0 auto;
+}

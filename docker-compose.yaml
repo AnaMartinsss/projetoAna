@@ -1,12 +1,12 @@
-version: '3'
+version: '3.8'
 services:
   mysql:
     image: mysql:8
-    container_name: mysql
+    container_name: mysql-hamburgueria
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ecommerce
+      MYSQL_DATABASE: hamburgueria
       MYSQL_USER: beto
     ports:
       - 3306:3306
