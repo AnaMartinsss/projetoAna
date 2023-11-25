@@ -14,6 +14,7 @@ import { PagamentoComponent } from "./components/pagamento/pagamento.component";
 import { AplicativoComponent } from './components/aplicativo/aplicativo.component';
 import { ProdutoComponent } from './components/produto/produto.component';
 import { EntregaComponent } from './components/entrega/entrega.component';
+import { DescricaoComponent } from './components/descricao/descricao.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { EntregaComponent } from './components/entrega/entrega.component';
     AplicativoComponent,
     ProdutoComponent,
     EntregaComponent,
+    DescricaoComponent,
   ],
   imports: [
     BrowserModule,
