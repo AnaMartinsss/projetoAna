@@ -7,15 +7,14 @@
     
 }
 
-.square{
-    border: black 5px;
-    background: linear-gradient(#FF3131, #FF914D);
+.content {
+    background-color: rgb(255, 255, 255);
     width: 50%;
     height: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    
-}
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
 h2{
     color: yellow;
 }
@@ -26,4 +25,13 @@ button{
     background-color: yellow;
     border: white;
     font-size: 15px;
+}
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 4px;
 }

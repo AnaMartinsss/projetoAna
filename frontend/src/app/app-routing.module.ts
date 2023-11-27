@@ -11,6 +11,7 @@ import { ProdutoComponent } from "./components/produto/produto.component";
 import { EntregaComponent } from "./components/entrega/entrega.component";
 import { DescricaoComponent } from "./components/descricao/descricao.component";
 import { AdminPageComponent } from "./components/admin-page/admin-page.component";
+import { ReservaComponent } from "./components/reserva/reserva.component";
 
 const routes: Routes = [
   { path: "inicio", component: InicioComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: "entrega", component: EntregaComponent },
   { path: "descricao", component: DescricaoComponent },
   { path: "admin", component: AdminPageComponent },
+  { path: "reserva", component: ReservaComponent  },
   { path: "", redirectTo: "inicio", pathMatch: "full" },
 ];
 

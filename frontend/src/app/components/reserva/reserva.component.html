@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="square">
+      <h1>FIVE BURGUER</h1>
+  
+      <div class="content">
+        <h2>Reserva de mesa</h2>
+        <form >
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" formControlName="nome" /><br />
+          <label for="quantidade">Quantidade de pessoas por mesa:</label><br />
+          <input
+            id="quantidade"
+            name="quantidade"
+            formControlName="quantidade"
+          /><br />
+          <label for="data">Data</label><br>
+          <input id="date" type="date" /><br>
+          <label for="reserva">Reserva:</label>
+          <select id="reserva" name="categoria" formControlName="reserva">
+            <option value="19h30min">19h30min</option>
+            <option value="20h30min">20h30min</option>
+            <option value="21h">21h</option></select
+          ><br />
+        
+  
+          <div class="button"><button type="submit">CONFIRMAR</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

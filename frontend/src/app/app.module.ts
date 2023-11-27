@@ -17,6 +17,7 @@ import { EntregaComponent } from "./components/entrega/entrega.component";
 import { DescricaoComponent } from "./components/descricao/descricao.component";
 import { AdminPageComponent } from "./components/admin-page/admin-page.component";
 import { NgApexchartsModule } from "ng-apexcharts";
+import { ReservaComponent } from './components/reserva/reserva.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { NgApexchartsModule } from "ng-apexcharts";
     EntregaComponent,
     DescricaoComponent,
     AdminPageComponent,
+    ReservaComponent,
   ],
   imports: [
     BrowserModule,
