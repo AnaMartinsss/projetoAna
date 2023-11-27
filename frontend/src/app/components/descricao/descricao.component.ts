@@ -33,18 +33,21 @@ export class DescricaoComponent {
         if (this.bacon >= 1) {
           this.bacon--;
           this.preco -= 2;
+          if (this.jalapeno >= 1) this.preco -= 2;
         }
         break;
       case 3:
         if (this.tomate >= 1) {
           this.tomate--;
           this.preco -= 1;
+          if (this.tomate >= 1) this.preco -= 1;
         }
         break;
       case 4:
         if (this.queijo >= 1) {
           this.queijo--;
           this.preco -= 3;
+          if (this.queijo >= 1) this.preco -= 3;
         }
         break;
       case 5:
