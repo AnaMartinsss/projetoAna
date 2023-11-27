@@ -8,7 +8,7 @@ import { CardapioComponent } from "./components/cardapio/cardapio.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { InicioComponent } from "./components/inicio/inicio.component";
 import { LoginComponent } from "./components/login/login.component";
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CadastroComponent } from "./components/cadastro/cadastro.component";
 import { PagamentoComponent } from "./components/pagamento/pagamento.component";
 import { AplicativoComponent } from "./components/aplicativo/aplicativo.component";
@@ -17,7 +17,7 @@ import { EntregaComponent } from "./components/entrega/entrega.component";
 import { DescricaoComponent } from "./components/descricao/descricao.component";
 import { AdminPageComponent } from "./components/admin-page/admin-page.component";
 import { NgApexchartsModule } from "ng-apexcharts";
-import { ReservaComponent } from './components/reserva/reserva.component';
+import { ReservaComponent } from "./components/reserva/reserva.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +40,7 @@ import { ReservaComponent } from './components/reserva/reserva.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     NgApexchartsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

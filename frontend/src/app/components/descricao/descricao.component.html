@@ -1,34 +1,68 @@
 <div class="container">
-    <div class="square">
+  <div class="square">
     <div class="img">
-        <img src="assets/incrivelhulk.png" alt="Hamburguer">
+      <img src="assets/incrivelhulk.png" alt="Hamburguer" />
     </div>
     <div class="ingredient">
-        <h2>Guaca Mole</h2>
-        <label for="Guaca mole">Quantidade:</label>
-        <input type="number" id="Guaca mole" name="Guaca mole" min="0">
-    
-        <h2>Bacon</h2>
-        <label for="bacon">Quantidade:</label>
-        <input type="number" id="bacon" name="bacon" min="0">
-  
-   
-        <h2>Tomate</h2>
-        <label for="tomate">Quantidade:</label>
-        <input type="number" id="tomate" name="tomate" min="0">
-   
-    
-        <h2>Queijo</h2>
-        <label for="queijo">Quantidade:</label>
-        <input type="number" id="queijo" name="queijo" min="0">
-    
-        <h2>Jalapeno</h2>
-        <label for="jalapeno">Quantidade:</label>
-        <input type="number" id="jalapeno" name="jalapeno" min="0">
+      <h2>Guaca Mole</h2>
+      <div class="buttons">
+        <button type="button" class="button" (click)="decrement(1)">
+          -
+        </button>
+        <input type="text" class="qtde" [(ngModel)]="guaca" />
+        <button type="button" class="button" (click)="increment(1)">+</button>
+      </div>
+
+      <h2>Bacon</h2>
+      <div class="buttons">
+        <button type="button" class="button" (click)="decrement(2)">
+          -
+        </button>
+        <input type="text" class="qtde" [(ngModel)]="bacon" />
+        <button type="button" class="button" (click)="increment(2)">+</button>
+      </div>
+
+      <h2>Tomate</h2>
+      <div class="buttons">
+        <button type="button" class="button" (click)="decrement(3)">
+          -
+        </button>
+        <input type="text" class="qtde" [(ngModel)]="tomate" />
+        <button type="button" class="button" (click)="increment(3)">+</button>
+      </div>
+
+      <h2>Queijo</h2>
+      <div class="buttons">
+        <button type="button" class="button" (click)="decrement(4)">
+          -
+        </button>
+        <input type="text" class="qtde" [(ngModel)]="queijo" />
+        <button type="button" class="button" (click)="increment(4)">+</button>
+      </div>
+
+      <h2>Jalapeno</h2>
+      <div class="buttons">
+        <button type="button" class="button" (click)="decrement(5)">
+          -
+        </button>
+        <input type="text" class="qtde" [(ngModel)]="jalapeno" value="1" />
+        <button type="button" class="button" (click)="increment(5)">+</button>
+      </div>
     </div>
-  
-    <h2>Observação:</h2>
-    <input id="Observação" name="Observação" required><br>
-    <button type="submit">CONFIRMAR</button>
-</div>
+
+    <div class="obs">
+      <h2>Observação:</h2>
+      <input
+        id="Observação"
+        name="Observacao"
+        class="input-obs"
+        required
+      /><br />
+    </div>
+    <button type="submit" class="save">CONFIRMAR</button>
+    <div class="price">
+        <h2>Preço:</h2>
+        <h2>R$ {{ preco }}</h2>
+    </div>
+  </div>
 </div>

@@ -1,50 +1,97 @@
-.container{
-    background-color: rgb(255, 67, 67);
-    width: 100%;
-    height: 100vh;
-    place-items: center;
-    margin-top: auto;    
+h2 {
+  margin: 0;
+  padding: 0;
 }
-.square{
-    background-color:rgb(255, 67, 67) ;
-    width: 40%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr  ;
-
-}
-img{
-    width: 50%;
-    height: 320px;
-    object-fit: cover;
-    align-items: center;
-  
+.container {
+  background-color: rgb(255, 67, 67);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin-top: auto;
 }
 
 .ingredient {
-   
-    
-    margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 9rem;
+  margin-top: 4rem;
+  padding-left: 5rem;
 }
-input{
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
- 
+.square {
+  background-color: rgb(255, 67, 67);
+  width: 700px;
+  height: 60rem;
+  display: grid;
+  grid-template-rows: 300px 1fr 80px 80px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
-input[type="name"]{
-
-    width: 100px;
-    height: 150px;
+.qtde {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: transparent;
+  font-size: 1.1rem;
 }
 
+.button {
+  width: 2.3rem;
+  height: 2.3rem;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
 
-button{
-    width: 200px;
-    height: 35px;
-    background-color: yellow;
-    border: white;
-    font-size: 15px;
+.button:hover {
+  background-color: rgb(255, 67, 67);
+  color: white;
+}
+
+.save {
+  width: 200px;
+  height: 35px;
+  background-color: yellow;
+  border: white;
+  font-size: 15px;
+  justify-self: end;
+  margin-right: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.save:hover {
+  background: rgb(102, 255, 107);
+}
+
+.obs {
+  margin: 0 2rem 2rem 5rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.input-obs {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  background: transparent;
+  padding-left: 1rem;
+}
+
+.price {
+  justify-self: end;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+  color: rgb(248, 255, 51);
+  display: flex;
+  gap: 10px;
 }
