@@ -2,6 +2,7 @@
 /dist
 backend/node_modules
 frontend/node_modules
+frontend/.angular
 
 # Logs
 logs
@@ -34,3 +35,5 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.angular
+node_modules

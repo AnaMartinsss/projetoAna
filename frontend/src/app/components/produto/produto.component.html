@@ -1,6 +1,6 @@
 <div class="container">
   <div class="square">
-    <h1>FIVE BURGUER</h1>
+    <a routerLink="/inicio"> <img src="assets/FiveBurguer_logo.png" alt="FiveBurguer_logo" /> </a>
 
     <div class="content">
       <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -27,7 +27,7 @@
           <option value="acompanhamento">Acompanhamento</option>
           <option value="bebida">Bebida</option></select
         ><br />
-        <input type="file" /> <br />
+        <input id="file" type="file" /> <br />
 
         <div class="button"><button type="submit">CONTINUAR</button></div>
       </form>

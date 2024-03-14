@@ -25,7 +25,7 @@ export class ProdutoComponent {
   onSubmit() {
     this.submitted = true;
 
-    // stop here if form is invalid
+    // pare aqui se o formulário for inválido
     if (this.form.invalid) {
       alert("Formulário inválido");
       return;
@@ -34,7 +34,7 @@ export class ProdutoComponent {
     this.loading = true;
   }
 
-  // convenience getter for easy access to form fields
+  // 
   get f() {
     return this.form.controls;
   }
